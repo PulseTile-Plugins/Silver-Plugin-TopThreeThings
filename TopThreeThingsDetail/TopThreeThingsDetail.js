@@ -36,7 +36,7 @@ export default class TopThreeThingsDetail extends PureComponent {
               <div className="form">
                 <div className="form-group-wrapper">
                   <div>
-                    <FormSectionList title="Isssue #1">
+                    <FormSectionList title="Issue #1">
                       <FormSection isBordered theme='primary'>
                         <div className="form-group-wrapper">
                           <div className="row-expand">
@@ -56,7 +56,7 @@ export default class TopThreeThingsDetail extends PureComponent {
                         </div>
                       </FormSection>
                     </FormSectionList>
-                    <FormSectionList title="Isssue #2">
+                    <FormSectionList title="Issue #2">
                       <FormSection isBordered theme='primary'>
                         <div className="form-group-wrapper">
                           <div className="row-expand">
@@ -76,7 +76,7 @@ export default class TopThreeThingsDetail extends PureComponent {
                         </div>
                       </FormSection>
                     </FormSectionList>
-                    <FormSectionList title="Isssue #3">
+                    <FormSectionList title="Issue #3">
                       <FormSection isBordered theme='primary'>
                         <div className="form-group-wrapper">
                           <div className="row-expand">
