@@ -275,7 +275,7 @@ export default class TopThreeThings extends PureComponent {
               <PluginMainPanel
                 headers={columnsToShowConfig}
                 resourceData={allTopThreeThings}
-                emptyDataMessage="No top 3 things"
+                emptyDataMessage="No information available"
                 onHeaderCellClick={this.handleHeaderCellClick}
                 onCellClick={this.handleDetailTopThreeThingsClick}
                 columnNameSortBy={columnNameSortBy}
