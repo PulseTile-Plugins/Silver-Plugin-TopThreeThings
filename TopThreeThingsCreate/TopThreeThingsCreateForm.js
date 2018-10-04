@@ -8,6 +8,7 @@ import { valuesNames, valuesLabels } from '../forms.config';
 import PropTypes from "prop-types";
 import FormSectionList from '../../../../form-fields/FormSectionList';
 import FormSection from '../../../../form-fields/FormSection';
+import { defaultFormValues } from './default-values.config';
 
 @reduxForm({
   form: 'topThreeThingsCreateFormSelector',
@@ -33,6 +34,8 @@ export default class TopThreeThingsCreateForm extends PureComponent {
       };
       this.props.initialize(dataToInitialize);
       this.setState({isImport: true})
+    } else {
+      this.props.initialize(defaultFormValues);
     }
   }
 
