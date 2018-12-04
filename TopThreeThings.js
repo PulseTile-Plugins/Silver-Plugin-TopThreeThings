@@ -25,6 +25,7 @@ import TopThreeThingsCreateForm from './TopThreeThingsCreate/TopThreeThingsCreat
 import { getDDMMMYYYY } from '../../../../utils/time-helpers.utils';
 import { checkIsValidateForm, operationsOnCollection } from '../../../../utils/plugin-helpers.utils';
 import { imageSource } from './ImageSource';
+import { themeConfigs } from '../../../../themes.config';
 
 const TOP_THREE_THINGS_MAIN = 'topThreeThingsMain';
 const TOP_THREE_THINGS_CREATE = 'topThreeThingsCreate';
@@ -69,6 +70,10 @@ export default class TopThreeThings extends PureComponent {
     isSubmit: false,
     isLoading: true,
   };
+
+  componentDidMount() {
+    document.title = themeConfigs.metaTitle + " - " + themeConfigs.patientsSummaryTitles['topThreeThings'];
+  }
 
   componentWillReceiveProps() {
     const sourceId = this.context.router.route.match.params.sourceId;
