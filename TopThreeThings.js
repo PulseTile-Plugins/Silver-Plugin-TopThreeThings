@@ -257,14 +257,11 @@ export default class TopThreeThings extends PureComponent {
     const isPatientHasTopThreeThings = (get(allTopThreeThings, 'length', 0) > 0) ? true : false;
 
     return (<section className="page-wrapper">
-      {!isDetailPanelVisible  || isCreatePanelVisible ?
-        <PluginBanner
-          title='Top 3 Things'
-          subTitle='A place to record the top 3 issues that concern you today'
-          img={imageSource}
-        />
-        : null
-      }
+      <PluginBanner
+        title='Top 3 Things'
+        subTitle='A place to record the top 3 issues that concern you today'
+        img={imageSource}
+      />
       <div className={classNames('section', { 'full-panel full-panel-main': isPanelMain, 'full-panel full-panel-details': isPanelDetails })}>
         <Row>
           {(isPanelMain || expandedPanel === 'all') ? <Col xs={12} className={classNames({ 'col-panel-main': isSecondPanel })}>
